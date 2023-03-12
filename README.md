@@ -12,4 +12,4 @@ In the service layer I have created a BikeService interface with several abstrac
 
 In the web/controller layer I'm injecting the BikeService bean via the @Autowired annotation and using the @RestController annotation which combines the @Controller and @ResponseBody annotations, indicating the class serves as a controller and that the object returned is automatically serialized into JSON and passed back into the HttpResponse object. In the controller file I have mapping annotations as well as the appropriate handler methods to handle HTTP requests(GET, POST, PUT, DELETE).
 
-In the exception folder I created a BikeNotFoundException class which extends the Exception class and has a public constructor that takes in no parameters but calls the constructor of the parent class Exception via the super keyword which takes in a String parameter.
+In the exception folder I created a BikeNotFoundException class which extends the Exception class and has a public constructor that calls the constructor of the parent class Exception via the super keyword which takes in a String parameter. This exception is thrown when a bike with a certain id is not present in the ArrayList.
