@@ -1,5 +1,5 @@
 # Bike-Inventory
-API for managing inventory for bikes with full CRUD operations.
+API for managing inventory for bikes with full CRUD(create, read, update, delete) operations.
 
 This project has a three layer design with repository, service and web/controller layers along with a pojo(plain old java object) class and an exception class. I used Postman to test the functionality of the API.
 
